@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&family=Roboto:wght@400;500&display=swap");
+
+@font-face {
+  font-family: "titir";
+  src: url(./fonts/LiTitirANSIV1-Regular.ttf);
+}
+
+.logo {
+  width: 180px;
+}
+
+h1,
+p {
+  font-family: "titir";
+}
+
+a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* adjust based on font if needed */
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+p {
+  color: gray;
+}
+
+#today-date {
+  color: #e71f1f;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+footer {
+  background-color: #e9e8e8;
+}
+
+.footer-text {
+  color: black;
+}
+
+.email-text {
+  color: black;
+  font-family: "Roboto", sans-serif; /* English font override */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
